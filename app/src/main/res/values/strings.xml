@@ -2,13 +2,11 @@
     <string name="app_name">4PR_mobile</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-    <string name="second_fragment">Second fragment</string>
-    <string name="third_fragment">Third fragment</string>
-    <string name="welcome">Welcome!</string>
-    <string name="second_fragment_title">Second fragment</string>
-    <string name="third_fragment_title">Third fragment</string>
+    <string name="second_fragment">Пациенты</string>
+    <string name="third_fragment">Врачи</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="second_fragment_title">Пациенты</string>
+    <string name="third_fragment_title">Врачи</string>
 </resources>
