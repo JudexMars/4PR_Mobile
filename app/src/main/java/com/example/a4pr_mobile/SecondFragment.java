@@ -1,11 +1,13 @@
 package com.example.a4pr_mobile;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -38,7 +40,8 @@ public class SecondFragment extends Fragment {
         ListAdapter adapter = new ListViewAdapter(getContext(), R.layout.item, items);
         secondFragListView.setAdapter(adapter);
         secondFragListView.setOnItemClickListener((parent, v, position, id) -> {
-
+            Toast.makeText(getContext(), items.get(position).getText(), Toast.LENGTH_SHORT).show();
+            Log.i("ListView", items.get(position).getText());
         });
     }
 }

@@ -1,11 +1,13 @@
 package com.example.a4pr_mobile;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +36,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         Item item = items.get(position);
         holder.textView.setText(item.getText());
         holder.imageView.setImageResource(item.getImage());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), item.getText(), Toast.LENGTH_SHORT).show();
+                Log.i("RecyclerAdapter", item.getText());
+            }
+        });
     }
 
     @Override
