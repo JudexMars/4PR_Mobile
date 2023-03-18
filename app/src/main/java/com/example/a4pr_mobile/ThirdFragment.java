@@ -37,9 +37,9 @@ public class ThirdFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstance) {
-        items.add(new Item("I am the first", 0));
-        items.add(new Item("I am the second", 1));
-        items.add(new Item("I am the third", 2));
+        items.add(new Item("I am the first", R.drawable.person));
+        items.add(new Item("I am the second", R.drawable.person));
+        items.add(new Item("I am the third", R.drawable.person));
 
         itemsList = view.findViewById(R.id.thirdFragRecyclerView);
         adapter = new RecyclerViewAdapter(getContext(), items);

@@ -32,9 +32,9 @@ public class SecondFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstance) {
-        items.add(new Item("First element", 0));
-        items.add(new Item("Second element", 1));
-        items.add(new Item("Third element", 2));
+        items.add(new Item("First element", R.drawable.person));
+        items.add(new Item("Second element", R.drawable.person));
+        items.add(new Item("Third element", R.drawable.person));
 
         ListView secondFragListView = binding.secondFragListView;
         ListAdapter adapter = new ListViewAdapter(getContext(), R.layout.item, items);
